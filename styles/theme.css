@@ -1,0 +1,7 @@
+:root{--psyche-bg:linear-gradient(180deg,#f6fff8,#f3f0ff)}
+body.psyche{background:var(--psyche-bg)}
+body.psyche .topbar{background:linear-gradient(90deg,rgba(155,123,240,0.06),rgba(11,191,107,0.04))}
+body.psyche .btn.primary{box-shadow:0 12px 40px rgba(123,211,137,0.12)}
+@media (prefers-reduced-motion: reduce){
+  *{transition:none!important}
+}
