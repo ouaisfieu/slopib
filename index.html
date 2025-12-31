@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARG Mission Engine — Mobile</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/theme.css">
+  <meta name="description" content="Prototype mobile-first pour veille citoyenne, anonyme et coopérative." />
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <button id="menu-toggle" class="icon-btn" aria-label="Ouvrir le menu">☰</button>
+    <h1 class="brand">ARG Engine</h1>
+    <button id="theme-toggle" class="icon-btn" aria-label="Basculer thème">🎨</button>
+  </header>
+
+  <main id="app" role="main" class="container">
+    <section id="dashboard" class="panel" aria-labelledby="dashboard-title">
+      <h2 id="dashboard-title">Missions</h2>
+      <div id="missions-list" class="list"></div>
+      <button id="create-mission" class="btn primary">Créer une mission</button>
+    </section>
+  </main>
+
+  <nav id="drawer" class="drawer" aria-hidden="true">
+    <ul>
+      <li><a href="#dashboard">Accueil</a></li>
+      <li><a href="src/editor/editor.html">Éditeur</a></li>
+      <li><a href="#settings">Paramètres</a></li>
+      <li><button id="export-data" class="link-btn">Exporter anonymisé</button></li>
+    </ul>
+  </nav>
+
+  <div id="modals" aria-hidden="true"></div>
+
+  <!-- engagement banner (optional include) -->
+  <div id="engagement-placeholder"></div>
+
+  <script type="module" src="src/app.js" defer></script>
+  <script src="engagement/pause-modal.js" defer></script>
+</body>
+</html>
