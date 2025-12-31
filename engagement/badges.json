@@ -1,0 +1,5 @@
+[
+  {"id":"badge-verificateur","title":"Vérificateur local","criteria":"5 signalements validés","description":"Vérification rigoureuse des signalements","visibility":"public"},
+  {"id":"badge-essaimage","title":"Essaimeur","criteria":"Aider 3 groupes à déployer","description":"Partage et formation","visibility":"public"},
+  {"id":"badge-guardian","title":"Gardien·ne de l'attention","criteria":"Activer pauses 14 jours","description":"Encourage pratiques saines","visibility":"public"}
+]
