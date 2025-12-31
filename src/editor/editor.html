@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Éditeur Markdown — ARG</title>
+<link rel="stylesheet" href="../styles/base.css">
+<link rel="stylesheet" href="editor.css">
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js" defer></script>
+<script type="module" src="editor.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Éditeur Markdown</h1>
+    <textarea id="md-editor" class="input" rows="12" placeholder="Écrivez en Markdown..."></textarea>
+    <h2>Aperçu</h2>
+    <div id="html-preview" class="card"></div>
+    <div style="margin-top:12px">
+      <button id="export-md" class="btn primary">Exporter MD</button>
+      <button id="export-html" class="btn">Exporter HTML</button>
+    </div>
+  </main>
+</body>
+</html>
